@@ -1,0 +1,156 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--darkgrey);
+}
+
+.content {
+  max-width: 1240px;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+}
+
+.leftColumn,
+.rightColumn {
+  padding: 1rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.leftColumn h2,
+.rightColumn h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.h2purp {
+  color: var(--secondary) !important;
+}
+
+.leftColumn p,
+.rightColumn p {
+  margin: 3rem 0 1rem 0;
+  width: 90%;
+  font-size: 1.2rem;
+  color: var(--lightgray);
+}
+
+.clientTitle {
+  color: var(--white);
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.client {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.ourClients {
+  display: flex;
+}
+
+.rightColumn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.rightColumn img,
+.leftColumn img {
+  max-width: 500px;
+}
+
+.findUs {
+  margin-top: 6rem;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  color: var(--grey);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.icon:hover {
+  color: var(--primary);
+}
+.formContainer {
+  width: 700px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #202931;
+  border-radius: 8px;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.inputField,
+.inputLabel {
+  color: var(--white);
+  width: 90%;
+  outline: none;
+  background: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
+.inputField {
+  margin-bottom: 2rem;
+  border: 1px solid var(--white);
+  font-size: 1.5rem;
+}
+.inputLabel {
+  font-size: 2rem;
+}
+.formFields textarea {
+  height: 200px;
+  font-size: 1.2rem;
+}
+
+.inputBtn {
+  margin-top: 3rem;
+  border-radius: 6px;
+  padding: 1rem 2rem;
+  color: var(--white);
+  background: var(--grey);
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.inputBtn:hover {
+  background: var(--primary);
+}
+
+@media screen and (max-width: 940px) {
+  .formContainer {
+    width: 450px;
+  }
+  .rightColumn img,
+  .leftColumn img {
+    display: none;
+  }
+}
